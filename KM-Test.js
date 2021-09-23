@@ -8,4 +8,10 @@ window.onload = function () {
   let increment = 0.01;
   let ParsedTotal = (parseFloat(TotalReplace) + increment).toFixed(2);
   originalTotal.innerHTML = ParsedTotal;
+
+  // Change content of the Main CTA
+  const addToCartBtnEl = document.querySelector(
+    "#product-addtocart-button > span:first-child"
+  );
+  addToCartBtnEl.innerHTML = "£21.99 - Add to Cart";
 };
