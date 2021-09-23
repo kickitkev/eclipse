@@ -14,4 +14,10 @@ window.onload = function () {
     "#product-addtocart-button > span:first-child"
   );
   addToCartBtnEl.innerHTML = "£21.99 - Add to Cart";
+
+  // Change the button colour and style
+  document.head.insertAdjacentHTML(
+    "beforebegin",
+    "<style>#product-addtocart-button{background: linear-gradient(91.01deg, #D26E4B 18.06%, #0CBBF4 118.35%) box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 22px; background: linear-gradient(91.01deg, #D26E4B 18.06%, #0CBBF4 118.35%);}</style>"
+  );
 };
